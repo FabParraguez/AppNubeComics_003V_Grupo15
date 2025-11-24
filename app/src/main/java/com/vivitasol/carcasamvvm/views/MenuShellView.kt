@@ -18,6 +18,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.*
 import kotlinx.coroutines.launch
 import com.vivitasol.carcasamvvm.navigation.Route
+import com.vivitasol.carcasamvvm.screens.MangaScreen
 import com.vivitasol.carcasamvvm.ui.theme.NubeGradient1
 import com.vivitasol.carcasamvvm.ui.theme.NubeGradient2
 import com.vivitasol.carcasamvvm.ui.theme.NubeBlue40
@@ -126,14 +127,14 @@ fun MenuShellView() {
                 NavigationDrawerItem(
                     label = { 
                         Text(
-                            "2.4.2 Persistencia y Animaciones",
+                            "Verificador de precio",
                             color = Color.DarkGray,
                             fontWeight = FontWeight.Medium
                         ) 
                     },
-                    selected = currentInnerRoute(innerNavController) == Route.Option4.route,
+                    selected = currentInnerRoute(innerNavController) == Route.Option5.route,
                     onClick = {
-                        innerNavController.navigate(Route.Option4.route) {
+                        innerNavController.navigate(Route.Option5.route) {
                             popUpTo(Route.Option1.route) { inclusive = false }
                             launchSingleTop = true
                         }
@@ -145,18 +146,18 @@ fun MenuShellView() {
                         selectedTextColor = Color.White
                     )
                 )
-
+                
                 NavigationDrawerItem(
                     label = { 
                         Text(
-                            "Verificador de precio",
+                            "Gestión de Mangas (CRUD)",
                             color = Color.DarkGray,
                             fontWeight = FontWeight.Medium
                         ) 
                     },
-                    selected = currentInnerRoute(innerNavController) == Route.Option5.route,
+                    selected = currentInnerRoute(innerNavController) == Route.MangaManagement.route,
                     onClick = {
-                        innerNavController.navigate(Route.Option5.route) {
+                        innerNavController.navigate(Route.MangaManagement.route) {
                             popUpTo(Route.Option1.route) { inclusive = false }
                             launchSingleTop = true
                         }
@@ -217,8 +218,8 @@ fun MenuShellView() {
                         onBack = { innerNavController.navigateUp() }
                     )
                 }
-                composable(Route.Option4.route) { Option4View() }
                 composable(Route.Option5.route) { Option5CameraView() }
+                composable(Route.MangaManagement.route) { MangaScreen() }
             }
         }
     }

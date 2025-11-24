@@ -78,7 +78,7 @@ fun WelcomeView(
                     )
                     
                     Text(
-                        text = "Esta es la carcasa base (Kotlin + Compose + MVVM).",
+                        text = "Administración NubeComics sede Moneda.",
                         style = MaterialTheme.typography.bodyLarge.copy(
                             color = MaterialTheme.colorScheme.onBackground,
                             fontSize = 16.sp
