@@ -40,8 +40,15 @@ android {
 }
 
 dependencies {
-    //dependencias para room(vista 6)
 
+    //Retrofit y Gson Converter
+    implementation("com.squareup.retrofit2:retrofit:2.11.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
+    // OkHttp logging interceptor for debugging network calls
+    implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
+
+    //Corrutinas para trabajo asincronico 
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.0")
 
     //dependencias lifecycle
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.6")
@@ -68,6 +75,8 @@ dependencies {
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
     testImplementation(libs.junit)
+    // Coroutines test helpers for unit tests
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.8.1")
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
