@@ -1,0 +1,6 @@
+com\vivitasol\comics\MangaRepository.class
+com\vivitasol\comics\Manga.class
+com\vivitasol\comics\NubeComicsApplication.class
+com\vivitasol\comics\MangaController.class
+com\vivitasol\comics\DataInitializer.class
+com\vivitasol\comics\MangaService.class
