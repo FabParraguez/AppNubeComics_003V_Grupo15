@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Original colors (keeping for compatibility) -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- NubeComics color palette -->
+    <color name="nube_blue_primary">#FF42B9E4</color>
+    <color name="nube_blue_secondary">#FF2186AC</color>
+    <color name="nube_background">#FFE3F6FC</color>
+    <color name="nube_gradient_start">#FF667EEA</color>
+    <color name="nube_gradient_end">#FF764BA2</color>
+    <color name="nube_dark">#FF212529</color>
+</resources>
